@@ -1,36 +1,35 @@
-# General build artifacts
-*.log
+# Vivado project files to ignore
+
+# Build / run artifacts
 *.jou
+*.log
 *.str
 *.zip
 *.tar.gz
 
-# Vivado/Quartus project junk
+# Vivado generated directories
 *.runs/
 *.sim/
 *.cache/
 *.hw/
 *.ip_user_files/
+*.srcs/sources_1/ip/*/
 *.xpr
-*.xpr.*
 *.dcp
 *.bit
 *.bin
+*.mmi
 
-# Quartus specific
-db/
-incremental_db/
-output_files/
-*.qpf
-*.qsf
-
-# Simulation
-*.wlf
+# Simulation outputs
+*.wdb
+*.wcfg
 *.vcd
 *.vvp
+*.wlf
 
-# OS / Editor files
+# Misc editor / OS files
 .DS_Store
 Thumbs.db
 *.swp
 *.bak
+
